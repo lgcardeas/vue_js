@@ -16,6 +16,9 @@ new Vue({
         },
         setAge: function(age){
             this.age = age;
+        },
+        alerting: function(){
+            alert('You Click me');
         }
 
     }

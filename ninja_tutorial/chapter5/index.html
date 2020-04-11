@@ -11,10 +11,10 @@
             <h1>Name: {{ name }}</h1>
             <h1>Age: {{ age }}  years old</h1>
             <h1>LinkedId:
-                <a v-bind:href="linkedin">lgcardenas</a>
+                <a v-on:click.prevent="alerting" v-bind:href="linkedin">lgcardenas</a>
             </h1>
 
-            <button v-on:click="setAge( age + 1 )">Add a Year</button>
+            <button v-on:click.once="setAge( age + 1 )">Add a Year</button>
             <button v-on:click="setAge( age - 1 )">Subtract a Year</button>
         </div>
         <script src="app.js"></script>
