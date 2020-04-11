@@ -3,6 +3,19 @@
         <meta charset="utf-8">
         <title>My VueJS APP</title>
         <link href="styles.css" rel="stylesheet" />
-        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
     </head>
+    <body>
+        <div id="vue-app">
+            <p>
+                {{ setAge("10") }}
+                {{ setName("Clara") }}
+            </p>
+
+            <h1>Greet: {{ greet() }}</h1>
+            <h1>Name: {{ name }}</h1>
+            <h1>Age: {{ age }} years old</h1>
+        </div>
+        <script src="app.js"></script>
+    </body>
 </html>
