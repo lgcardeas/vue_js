@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My VueJS APP</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>Keyboard Events</h1>>
+            <label>Name:</label> <input type="text" v-on:keyup.enter="logName"/>
+            <label>Age:</label> <input type="text" v-on:keyup.enter="logAge"/>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
